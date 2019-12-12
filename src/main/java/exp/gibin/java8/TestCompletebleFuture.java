@@ -6,6 +6,9 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
 //Asynchronus calls
+/*
+ * Check thread pool or forkjoin pool
+ * */
 
 public class TestCompletebleFuture {
 
@@ -45,7 +48,9 @@ public class TestCompletebleFuture {
 			}
 		});
 		try {
+			
 			Void result = fututre.get();
+			System.out.println("result"+result.toString());
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
